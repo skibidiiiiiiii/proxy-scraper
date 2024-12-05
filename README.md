@@ -1,21 +1,24 @@
 # Proxy Scraper
 
-Un scrappeur de proxys en Python qui collecte des proxys gratuits à partir de sites populaires et les enregistre dans un fichier texte.
+A Python-based proxy scraper that collects free proxies from popular websites and saves them into a text file.
 
-## Fonctionnalités
-- Récupère des proxys depuis des sites bien connus comme :
+## Description
+This tool fetches proxies from multiple sources, processes them, and stores the results in a `proxies.txt` file. It's useful for tasks requiring proxy lists, such as web scraping or anonymity purposes.
+
+## Features
+- Scrapes proxies from well-known sources such as:
   - [Free Proxy List](https://free-proxy-list.net/)
   - [US Proxy](https://www.us-proxy.org/)
   - [ProxyScrape](https://www.proxyscrape.com/)
-- Sauvegarde les proxys récupérés dans un fichier `proxies.txt`.
-- Gère les erreurs de récupération pour continuer avec les sites fonctionnels.
+- Saves scraped proxies to a `proxies.txt` file.
+- Handles errors gracefully to continue scraping from available sources.
 
-## Prérequis
-- Python 3.8 ou plus récent
-- Bibliothèques nécessaires :
+## Prerequisites
+- Python 3.8 or newer
+- Required libraries:
   - `requests`
   - `beautifulsoup4`
 
-Installez-les en exécutant la commande suivante :
+Install dependencies with:
 ```bash
 pip install requests beautifulsoup4
